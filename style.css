@@ -5,6 +5,13 @@ body {
   color: #333;
 }
 
+h1 {
+  font-size: 48px; /* or try 64px for extra impact */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
 header {
   padding: 10px;
   text-align: center;
