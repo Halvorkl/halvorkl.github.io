@@ -42,7 +42,7 @@ main {
 .image {
   flex: 1;
   padding: 20px;
-  min-width: 300px;
+  min-width: 100px;
 }
 
 .image img {
@@ -51,7 +51,7 @@ main {
   border-radius: 8px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .section {
     flex-direction: column;
   }
