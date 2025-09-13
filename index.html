@@ -1,31 +1,100 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klepsvik Electro Solutions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      text-align: center;
+      color: #333;
+    }
+
+    header {
+      padding: 10px;
+    }
+
+    header img {
+      max-width: 400px;
+      height: auto;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    .nav-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      max-width: 1000px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .nav-grid a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+      transition: all 0.3s ease;
+      padding: 2px 2px;
+    }
+
+    .nav-grid a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      padding: 2px 2px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    @media (max-width: 700px) {
+      .nav-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .nav-grid a {
+        background-color: transparent !important;
+      }
+    }
+  </style>
+</head>
 <body>
+
   <header>
     <a href="index.html">
-      <img src="KES_logo.png" alt="KES Logo" />
+    <img src="KES_logo.png" alt="KES Logo" />
     </a>
   </header>
 
+  <nav>
+    <div class="nav-grid">
+      <a href="services.html">Services</a>
+      <a href="experience.html">Experience and Background</a>
+      <a href="projects.html">Projects</a>
+    </div>
+  </nav>
+
   <main>
-    <h1>Experience and Background</h1>
-
-    <section class="section">
-      <div class="text">
-        <h2>20+ Years of Expertise</h2>
-        <p>Halvor Klepsvik has worked across residential, commercial, and industrial electrical systems, bringing precision and reliability to every project.</p>
-      </div>
-      <div class="image">
-        <img src="experience1.jpg" alt="Halvor working on site" />
-      </div>
-    </section>
-
-    <section class="section reverse">
-      <div class="image">
-        <img src="experience2.jpg" alt="Electrical panel setup" />
-      </div>
-      <div class="text">
-        <h2>Certified and Trusted</h2>
-        <p>With certifications in automation and safety, Halvor ensures every installation meets the highest standards.</p>
-      </div>
-    </section>
+    <h1>Klepsvik-solutions.com under maintenance</h1>
+    <p>Halvor Klepsvik, 1234</p>
   </main>
+
 </body>
+</html>
+
