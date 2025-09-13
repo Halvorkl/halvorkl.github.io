@@ -42,7 +42,7 @@ main {
 .image {
   flex: 1;
   padding: 20px;
-  min-width: 100px;
+  min-width: 300px;
 }
 
 .image img {
