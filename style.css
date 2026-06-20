@@ -11,7 +11,7 @@ header {
     }
 
 header img {
-      max-width: 400px;
+      max-width: 800px;
       height: auto;
     }
 
@@ -23,7 +23,7 @@ nav {
 .nav-grid {
   display: flex;
   justify-content: center;   /* sentrerer lenkene horisontalt */
-  gap: 100px;                 /* mellomrom mellom lenkene */
+  gap: 400px;                 /* mellomrom mellom lenkene */
   max-width: 1000px;
   margin: 0 auto;
   align-items: center;
