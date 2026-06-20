@@ -29,12 +29,14 @@
     }
 
     .nav-grid {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      max-width: 1000px;
-      margin: 0 auto;
-      align-items: center;
-    }
+  display: flex;
+  justify-content: center;   /* sentrerer lenkene horisontalt */
+  gap: 40px;                 /* mellomrom mellom lenkene */
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
 
     .nav-grid a {
       color: #fff;
