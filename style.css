@@ -1,88 +1,72 @@
+/* ===== Generelt ===== */
+
 body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      text-align: center;
-      color: #333;
-    }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+  color: #333;
+}
+
+/* ===== Header ===== */
 
 header {
-      padding: 10px;
-    }
+  padding: 10px;
+  text-align: center;
+}
 
 header img {
-      max-width: 800px;
-      height: auto;
-    }
+  max-width: 800px;
+  height: auto;
+}
+
+/* ===== Navigasjon / toppmeny ===== */
 
 nav {
-      background-color: #333;
-      padding: 10px 0;
-    }
+  background-color: #333;
+  padding: 10px 0;
+}
 
 .nav-grid {
   display: flex;
   justify-content: center;   /* sentrerer lenkene horisontalt */
-  gap: 400px;                 /* mellomrom mellom lenkene */
+  gap: 400px;                /* avstand mellom lenkene */
   max-width: 1000px;
   margin: 0 auto;
   align-items: center;
 }
 
-
 .nav-grid a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 24px;
-      transition: all 0.3s ease;
-      padding: 2px 2px;
-    }
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  padding: 2px 2px;
+}
 
 .nav-grid a:hover {
-      color: #ffcc00;
-    }
-
-main {
-      padding: 2px 2px;
-      max-width: 1000px;
-    }
-
-h1 {
-      font-size: 24px;
-      margin-bottom: 15px;
-    }
-
-p {
-      font-size: 20px;
-    }
-
-@media (max-width: 700px) {
-      .nav-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-.nav-grid a {
-        background-color: transparent !important;
-      }
-    }
-h1 {
-  font-size: 40px; /* or try 64px for extra impact */
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 3vw; /* scales with screen width */
+  color: #ffcc00;
 }
-header {
-  padding: 10px;
-  text-align: center;
-}
+
+/* ===== Main og typografi ===== */
 
 main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 3vw;  /* skalerer med skjermbredden */
+}
+
+p {
+  font-size: 20px;
+}
+
+/* ===== Seksjoner med tekst + bilde ===== */
 
 .section {
   display: flex;
@@ -96,12 +80,7 @@ main {
   flex-direction: row-reverse;
 }
 
-.text {
-  flex: 1;
-  padding: 20px;
-  min-width: 300px;
-}
-
+.text,
 .image {
   flex: 1;
   padding: 20px;
@@ -114,12 +93,27 @@ main {
   border-radius: 50px;
 }
 
+/* ===== Responsiv tilpasning (mobiler) ===== */
+
 @media (max-width: 700px) {
+  .nav-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-grid a {
+    background-color: transparent !important;
+  }
+
   .section {
     flex-direction: column;
   }
 
   .section.reverse {
     flex-direction: column;
+  }
+
+  h1 {
+    font-size: 24px; /* litt mer kontrollert på veldig små skjermer */
   }
 }
